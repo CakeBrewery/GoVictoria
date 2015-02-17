@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ts300App')
-  .controller('EventsCtrl', function ($scope) {
+  .controller('EventsCtrl', function ($scope, dialogs) {
     $scope.events = [
 	    {
 	    	name: "Free Food", 
@@ -23,4 +23,20 @@ angular.module('ts300App')
 	    	img_url: "images/events/img3.jpg"
 	    }
     ];
-  });
+
+    $scope.eventModal = function(event){
+    	var dlg = dialogs.notify(event.name, event.description);
+    };
+    /*
+    $scope.eventModal = function(evnt) {
+    	$dlg = $dialogs.notify(evnt.name, evnt.description);
+    }*/
+  })
+
+
+.config(function(dialogsProvider){
+    // this provider is only available in the 4.0.0+ versions of angular-dialog-service
+    dialogsProvider.useBackdrop(true);
+    dialogsProvider.useEscClose(true);
+    dialogsProvider.setSize('md');
+});

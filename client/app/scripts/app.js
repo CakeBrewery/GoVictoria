@@ -15,7 +15,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap',
+    'dialogs.main',
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -35,3 +37,4 @@ angular
         redirectTo: '/'
       });
   });
+
