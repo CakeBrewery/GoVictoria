@@ -58,11 +58,7 @@ body {
   border-radius: 0px !important;
 }
 
-.event-image-container {
-  width: 100%;
-  height: 100%;
-  padding: 3px;
-}
+
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
@@ -96,7 +92,8 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   /* Remove the padding we set earlier */
@@ -105,6 +102,17 @@ body {
   .footer {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .event-image{
+  width: 100%;
+  height: 100px;
+  }
+
+  .event-image-container {
+  width: 100%;
+  height: 100%;
+  padding: 3px;
   }
   /* Space out the masthead */
   .header {
