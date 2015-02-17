@@ -21,6 +21,12 @@ angular.module('ts300App')
 	    	description: "Come to Willows beach and play volleyball with us! ", 
 	    	location: "Willows Beach",
 	    	img_url: "images/events/img3.jpg"
+	    },
+	    {
+	    	name: "Hot Dogs for Free @ UVic",
+	    	description: "We are giving out free hot dogs at UVic, come and get yours!",
+	    	location: "Outdie the SUB at UVic",
+	    	img_url: "images/events/img4.jpg"
 	    }
     ];
 
