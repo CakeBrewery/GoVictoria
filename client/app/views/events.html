@@ -1,7 +1,7 @@
 
 
 
-<div class="container"> 
+<div class="jumbotron"> 
 
 	<div class="row"> 
 		<div class="col-sm-12"> 
@@ -11,26 +11,34 @@
 			</p> 
 		</div> 
 	</div> 
+
+	<img src="styles/images/cloud.png" />
 </div> 
 
 
 
 
 
+<div class="container">
+	<h4> Events In Our Catalog </h4>
 
-<div class="row">
+	<div class="row">
+		<!-- EVENTS -->
+	    <div class="col-sm-8">
+	        <event-card ng-repeat="event in events"></event-card>                    
+	    </div>
 
-	<!-- MAP -->
-	<div class="col-sm-4">
-		<div class="map-container" affix offset-top="185" container-class="row" scroll-element-class="events-map">
-			<div class="events-map"  events-map></div>
+
+		
+		<!-- MAP -->
+		<div class="col-sm-4">
+			<div class="map-container" affix offset-top="185" container-class="row" scroll-element-class="events-map">
+				<div class="events-map"  events-map></div>
+			</div>
 		</div>
+
+
+
 	</div>
-
-	<!-- EVENTS -->
-    <div class="col-sm-8">
-        <event-card ng-repeat="event in events"></event-card>                    
-    </div>
-
 </div>
 

@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+.navbar.custom{
+  margin-bottom: 0px;
+}
+
 .navbar-custom {
     background-color:#4099FF;
     color:#ffffff;
@@ -36,13 +40,10 @@ body {
 
 /* Custom page header */
 .header {
-
-  margin-bottom: 10px;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
-  margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
 }
@@ -66,8 +67,18 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  min-height: 200px;
+  position: relative;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background-color: rgb(0, 176, 240);
+  color: white;
+}
+
+.jumbotron img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .eventcard {
   background-color: #eee;
@@ -138,7 +149,6 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
