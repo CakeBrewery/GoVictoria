@@ -79,6 +79,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+  pointer-events: none;
 }
 .eventcard {
   background-color: #eee;
@@ -93,8 +94,8 @@ body {
 
 
 .jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+  font-size: 18px;
+  padding: 10px 12px;
 }
 
 

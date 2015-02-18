@@ -11,20 +11,39 @@
 
 	<!-- Survey2 -->
 	<div ng-hide="currentQuestion != 2">
-		<p> It looks like today is Sunny. If not Select today's weather conditions </p> 
-		<p> --insert drop down menu with weather options here </p> 
+		<h2> <b> It looks like today is Sunny! </b></h2>
+		<p> If not, select the current weather conditions </p>
 
+
+		<!-- drop down--> 
+		<div class="btn-group pull-center">
+		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		    Sunny <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+		    <li><a href="">Mostly Sunny</a></li>
+		    <li><a href="">Cloudy</a></li>
+		    <li><a href="">Rainy</a></li>
+		    <li><a href="">Cold</a></li>
+		    <li><a href="">Warm</a></li>
+		    <li><a href="">Average Temperature</a></li>
+		    <li class="divider"></li>
+		    <li><a href="">sunny</a></li>
+		  </ul>
+		</div>
+		<p></p>
+		<!-- next question button -->
 		<p><a class="btn btn-lg btn-success" ng-click="switchQuestion(3)"> Next Question </a></p>
 	</div> 
 
 	<!-- Survey3 --> 
 	<div ng-hide="currentQuestion != 3"> 
-		<p> Just confirm the following statements and you'll be ready to go! </p> 
+		<h2><b> Just confirm the following statements and you'll be ready to go! </b></h2> 
 
-		<p> 1. I like physical activities </p> 
-		<p> 2. I prefer spending time outdoors </p> 
-		<p> 3. I like art </p> 
-		<p> 4. I like animals </p> 
+		<p> 1. I like physical activities <input type="checkbox"></p> 
+		<p> 2. I prefer spending time outdoors <input type="checkbox"></p> 
+		<p> 3. I like art <input type="checkbox"></p> 
+		<p> 4. I like animals <input type="checkbox"></p> 
 
 		<p><a class="btn btn-lg btn-success" ng-click="switchQuestion(3)"> Next Question </a></p>
 
