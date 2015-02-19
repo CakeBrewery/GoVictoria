@@ -59,9 +59,6 @@ angular.module('ts300App')
 	    }
 	];
 
-    $scope.eventModal = function(event){
-    	var dlg = dialogs.notify(event.name, event.description);
-    };
 
     $scope.go = function(url){
     	$location.path(url);
