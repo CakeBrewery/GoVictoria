@@ -45,7 +45,7 @@ angular.module('ts300App')
     $scope.prototypeEvents = [
 	    {
 	    	id: 2,
-	    	name: "beacon Hill Petting Zoo",
+	    	name: "Beacon Hill Petting Zoo",
 	    	description: "Come to beacon hill and interact with fluffy animals!",
 	    	location: "Beacon Hill Park, Circle Drive, Victoria, BC V8V",
 	    	img_url: "images/events/img5.jpg"
