@@ -10,7 +10,7 @@ angular.module('ts300App')
 	    	img_url: "images/events/img1.jpg"
 	    }, 
 	   	{
-	    	name: "beacon Hill Petting Zoo",
+	    	name: "Beacon Hill Petting Zoo",
 	    	description: "Come to beacon hill and interact with fluffy animals!",
 	    	location: "Beacon Hill Park",
 	    	img_url: "images/events/img5.jpg"
