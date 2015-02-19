@@ -145,9 +145,13 @@ body {
   }
 
   .container-small {
-    width: 40% !important;
-    max-width: 40% !important;
-    padding-left: 40px;
+    width: 50% !important;
+    max-width: 50% !important;
+    padding-left: 50px;
+  }
+
+  .about{
+    text-align: center;
   }
 
   /* Remove the padding we set earlier */

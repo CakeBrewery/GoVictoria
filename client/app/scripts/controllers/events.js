@@ -22,7 +22,7 @@ angular.module('ts300App')
 	    {
 	    	id: 3,
 	    	name: "Awesome Mt. Tolmie Hike", 
-	    	description: "It's a group hike a Mt. Tolmie! Feel free to come", 
+	    	description: "It's a group hike at Mt. Tolmie! Feel free to come", 
 	    	location: "Mount Tolmie, Victoria, BC V8P 4R6",
 	    	img_url: "images/events/img2.jpg"
 	    },
