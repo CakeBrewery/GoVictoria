@@ -75,6 +75,10 @@ body {
   color: white;
 }
 
+.event-description {
+  text-align: center;
+}
+
 .jumbotron img{
   position: absolute;
   left: 0;
@@ -93,10 +97,7 @@ body {
 }
 
 
-.jumbotron .btn {
-  font-size: 18px;
-  padding: 10px 12px;
-}
+
 
 
 /* Map styles */
@@ -137,6 +138,10 @@ body {
   .container {
     width: 95% !important;
     max-width: 100% !important;
+  }
+
+  .container-center {
+    margin: 0 auto;
   }
 
   .container-small {
