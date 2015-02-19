@@ -1,70 +1,86 @@
-<div class="jumbotron" ng-controller="SurveyCtrl" ng-init="currentQuestion=1">
+<div class="" ng-controller="SurveyCtrl" ng-init="currentQuestion=1">
+	<div class="jumbotron">
 
-	<!-- Survey1 -->
-	<div ng-hide="currentQuestion != 1">
-	  <h1>There's Fun Around You </h1>
-	  <p class="lead">
-	    Find what's happening and go! 
-	  </p>
-	  <p><a class="btn btn-lg btn-success" ng-click="switchQuestion(2)"> Start Looking <span class="glyphicon glyphicon-ok"></span></a></p>
-	</div> 
+		<!-- Survey1 -->
+		<div ng-hide="currentQuestion != 1">
+		  <h1>There's Fun Around You </h1>
+		  <p class="lead">
+		    Find what's happening and go! 
+		  </p>
+		  <p><a class="btn btn-lg btn-success" ng-click="switchQuestion(2)"> Start Looking <span class="glyphicon glyphicon-ok"></span></a></p>
+		</div> 
 
-	<!-- Survey2 -->
-	<div ng-hide="currentQuestion != 2">
-		<h2> <b> It looks like today is Sunny! </b></h2>
-		<p> If not, select the current weather conditions </p>
+		<!-- Survey2 -->
+		<div ng-hide="currentQuestion != 2">
+			<h2> <b> It looks like today is Sunny! </b></h2>
+			<p> If not, select the current weather conditions </p>
 
 
-		<!-- drop down--> 
-		<div class="btn-group pull-center">
-		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-		    Sunny <span class="caret"></span>
-		  </button>
-		  <ul class="dropdown-menu" role="menu">
-		    <li><a href="">Mostly Sunny</a></li>
-		    <li><a href="">Cloudy</a></li>
-		    <li><a href="">Rainy</a></li>
-		    <li><a href="">Cold</a></li>
-		    <li><a href="">Warm</a></li>
-		    <li><a href="">Average Temperature</a></li>
-		    <li class="divider"></li>
-		    <li><a href="">sunny</a></li>
-		  </ul>
+			<!-- drop down--> 
+			<div class="btn-group pull-center">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			    Sunny <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu">
+			    <li><a href="">Mostly Sunny</a></li>
+			    <li><a href="">Cloudy</a></li>
+			    <li><a href="">Rainy</a></li>
+			    <li><a href="">Cold</a></li>
+			    <li><a href="">Warm</a></li>
+			    <li><a href="">Average Temperature</a></li>
+			    <li class="divider"></li>
+			    <li><a href="">sunny</a></li>
+			  </ul>
+			</div>
+			<p></p>
+			<!-- next question button -->
+			<p><a class="btn btn-lg btn-success" ng-click="switchQuestion(3)"> Next Question </a></p>
+		</div> 
+
+		<!-- Survey3 --> 
+		<div ng-hide="currentQuestion != 3"> 
+			<h2><b> Just confirm the following statements and you'll be ready to go! </b></h2> 
+
+			<p> 1. I like physical activities <input type="checkbox"></p> 
+			<p> 2. I prefer spending time outdoors <input type="checkbox"></p> 
+			<p> 3. I like art <input type="checkbox"></p> 
+			<p> 4. I like animals <input type="checkbox"></p> 
+
+			<p><a class="btn btn-lg btn-success" ng-click="switchQuestion(4)"> Go! </a></p>
+
+
 		</div>
-		<p></p>
-		<!-- next question button -->
-		<p><a class="btn btn-lg btn-success" ng-click="switchQuestion(3)"> Next Question </a></p>
-	</div> 
 
-	<!-- Survey3 --> 
-	<div ng-hide="currentQuestion != 3"> 
-		<h2><b> Just confirm the following statements and you'll be ready to go! </b></h2> 
+		<div ng-hide="currentQuestion != 4"> 
+			<h2><b> Here are your results! </b></h2>
+			<p><a class="btn btn-lg btn-success" ng-click="switchQuestion(1)"> New Search </a>
+		</div>
 
-		<p> 1. I like physical activities <input type="checkbox"></p> 
-		<p> 2. I prefer spending time outdoors <input type="checkbox"></p> 
-		<p> 3. I like art <input type="checkbox"></p> 
-		<p> 4. I like animals <input type="checkbox"></p> 
 
-		<p><a class="btn btn-lg btn-success" ng-click="switchQuestion(3)"> Next Question </a></p>
 
+		<!-- cloud image -->
+		<div class="hidden-xs">
+			<img src="styles/images/cloud.png" />
+		</div>
 
 	</div>
 
-	<!-- cloud image -->
-	<div class="hidden-xs">
-		<img src="styles/images/cloud.png" />
+	<div class="container">
+
+		<div class="row marketing" ng-hide="currentQuestion == 4">
+		  <h4> Happening This Week </h4>
+		  <div ng-controller="EventsCtrl">
+		  	<event-card ng-repeat="event in events"></event-card>  
+		  </div>
+		</div>
+
+		<div class="row marketing" ng-hide="currentQuestion !=4">
+		  <h4> You may be interested in the following events: </h4>
+		  <div ng-controller="EventsCtrl">
+		  	<event-card ng-repeat="event in prototypeEvents"></event-card>  
+		  </div>
+		</div>
 	</div>
-
-</div>
-
-<div class="container">
-
-<div class="row marketing">
-  <h4> Happening This Week</h4>
-  <div ng-controller="EventsCtrl">
-  	<event-card ng-repeat="event in events"></event-card>  
-  </div>
-</div>
 </div>
 
 

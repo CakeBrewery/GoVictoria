@@ -9,10 +9,15 @@ angular.module('ts300App')
 	    	location: "1010 nice street",
 	    	img_url: "images/events/img1.jpg"
 	    }, 
-
+	   	{
+	    	name: "beacon Hill Petting Zoo",
+	    	description: "Come to beacon hill and interact with fluffy animals!",
+	    	location: "Beacon Hill Park",
+	    	img_url: "images/events/img5.jpg"
+	    },
 	    {
 	    	name: "Awesome Mt. Tolmie Hike", 
-	    	description: "It's a hike a Mt. Tolmie! Feel free to come", 
+	    	description: "It's a group hike a Mt. Tolmie! Feel free to come", 
 	    	location: "Mount Tolmie",
 	    	img_url: "images/events/img2.jpg"
 	    },
@@ -29,6 +34,21 @@ angular.module('ts300App')
 	    	img_url: "images/events/img4.jpg"
 	    }
     ];
+
+    $scope.prototypeEvents = [
+	    {
+	    	name: "beacon Hill Petting Zoo",
+	    	description: "Come to beacon hill and interact with fluffy animals!",
+	    	location: "Beacon Hill Park",
+	    	img_url: "images/events/img5.jpg"
+	    },
+	    {
+	    	name: "Awesome Mt. Tolmie Hike", 
+	    	description: "It's a group hike a Mt. Tolmie! Feel free to come", 
+	    	location: "Mount Tolmie",
+	    	img_url: "images/events/img2.jpg"
+	    }
+	];
 
     $scope.eventModal = function(event){
     	var dlg = dialogs.notify(event.name, event.description);
