@@ -67,7 +67,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  min-height: 200px;
+  min-height: 100px;
   position: relative;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
@@ -108,10 +108,19 @@ body {
   position: relative;
 }
 
+.map-container2 {
+  width: 70%;
+  background-color: white;
+  padding: 3px;
+  margin-top: 0px;
+  border: 1px solid #DDD;
+  position: center;
+}
+
 .events-map {
   margin-right: 20px;
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
 
 /* Supporting marketing content */
@@ -147,6 +156,11 @@ body {
   .event-image{
   width: 100%;
   height: 100px;
+  }
+
+  .event-image2{
+    width: 100%;
+    height: 400px;
   }
 
   .event-image-container {

@@ -18,6 +18,7 @@ angular
     'ngTouch',
     'ui.bootstrap',
     'dialogs.main',
+    'ngRoute',
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -31,6 +32,10 @@ angular
       })
       .when('/events', {
         templateUrl:'views/events.html', 
+        controller: 'EventsCtrl'
+      })
+      .when('/event/:id', {
+        templateUrl:'views/display_event.html',
         controller: 'EventsCtrl'
       })
       .otherwise({

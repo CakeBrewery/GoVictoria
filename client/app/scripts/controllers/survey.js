@@ -6,7 +6,6 @@ angular.module('ts300App')
   	$scope.currentQuestion; 
 
   	$scope.switchQuestion = function(n){
-  		console.log("test"); 
   		$scope.currentQuestion = n; 
   	};
 
