@@ -6,7 +6,7 @@
   <div class="container-small container-center">
 	  <div class="input-group">
 
-		<input type="text" class="form-control" placeholder="Search for Events...">
+		<input type="text" ng-model="q" class="form-control" placeholder="Search for Events...">
 		<div class="input-group-btn">
 		<button class="btn btn-default" type="button" ng-click="go('/event/3')">&nbsp;&nbsp;Go!&nbsp;&nbsp;</button>
 	    </div>
@@ -30,7 +30,7 @@
 	<div class="row">
 		<!-- EVENTS -->
 	    <div class="col-sm-8">
-	        <event-card ng-repeat="event in events"></event-card>                    
+	        <event-card ng-repeat="event in events | filter:q"></event-card>                    
 	    </div>
 
 
