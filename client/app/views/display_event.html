@@ -18,7 +18,31 @@
 		<h1> {{event.name}} </h1>
 		<h3> {{event.description}} </h3>
 		<hr> 
+		
+
+		<div class="event-image2">
+			<img src="{{event.img_url}}">
+		</div>
+
+		<hr>
 		<h2> Times and Location </h2>
+
+
+		<h3> {{event.location}}</h3>
+
+
+			
+			<div class="container-center container-small" padding="100px">
+
+					<p></p>
+					<div class="map-container" affix offset-top="185" container-class="row" scroll-element-class="events-map">
+						<div class="events-map"  events-map></div>
+					</div>
+			</div>
+		
+
+		<p></p>
+
 
 
 

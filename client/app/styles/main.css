@@ -164,8 +164,11 @@ body {
   }
 
   .event-image2{
-    width: 100%;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
+    width: 40;
+    margin: 3px;
+    padding: 3px;
   }
 
   .event-image-container {
